@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>11010145_1</title>
+	<script>
+		var answer= Math.ceil(Math.random()*99);
+		var number=Number(prompt("請輸入數字(1-99)：",""));
+		var count=1;
+		while(answer!=number)
+		{
+			if (number>answer) 
+			{
+				alert("太大了,請重新輸入");
+				
+			}
+			else
+			{
+				alert("太小了,請重新輸入");
+				
+			}
+			number=Number(prompt("請輸入數字(1-99)：",""));
+			count++;
+		}
+		alert("你答對了，花了"+count+"次");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

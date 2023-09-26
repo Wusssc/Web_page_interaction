@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>11010145_3</title>
+	<script>
+		function table()
+		{
+		document.write("<table border='1'>");
+		 var Students = new Array(4);
+        //宣告一維陣列的每個元素都是另一個一維陣列，用來存放姓名與分數
+        for(var i = 0; i < Students.length; i++)
+          Students[i] = new Array(2);
+        //一一設定二維陣列的值
+        Students[0][0] = "小丸子";
+        Students[1][0] = "花輪";
+        Students[2][0] = "小玉";
+        Students[3][0] = "美環";
+        Students[0][1] = 80;
+        Students[1][1] = 95;
+        Students[2][1] = 92;
+        Students[3][1] = 88;
+        for(var i=0;i<Students.length;i++)
+        {
+        	document.write("<tr>");
+        	for(var j=0;j<Students[i].length;j++)
+        	{
+        		document.write("<td>"+Students[i][j]+"</td>");
+        	}
+        }
+        document.write("</table>");
+    	}
+    	function showLocation()
+    	{
+    		for(var p in window.location)
+    		{
+    			document.write(p+":"+window.location[p]+"<br>");
+    		}
+    	}
+
+	</script>
+</head>
+<body>
+	<button onclick="table();">產生表格</button>
+	<button onclick="showLocation();">showLocation</button>
+	<button onclick="window.location.reload();">重新整理</button>
+	<button onclick="window.location.replace('http://www.chihlee.edu.tw/');">首頁</button>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>11010145_2</title>
+	<script>
+		var width=window.innerWidth;
+		var height=window.innerHeight;
+		//alert("寬"+width+"高"+height);
+		var myWin=null;
+		function openNewWindow()
+		{
+			myWin=window.open("http://www.chihlee.edu.tw","myWin","height=200,width=400");
+		}
+		function closeNewWindow()
+		{
+			if (myWin) myWin.close();
+		}
+		function closeThisWindow()
+		{
+			window.close();
+		}
+		function date()
+		{
+			var objDate=new Date();
+			alert(objDate);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="openNewWindow();">開啟新視窗</button>
+	<button onclick="closeNewWindow();">關閉新視窗</button>
+	<button onclick="closeThisWindow();">關閉本視窗</button>
+	<button onclick="date();">現在時間</button>
+</body>
+</html>
